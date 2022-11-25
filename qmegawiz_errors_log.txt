@@ -1,0 +1,7 @@
+
+
+C:/Users/usuario/Desktop/lab3/lab3tydd/altpll.vhd
+
+Nov 25 01PM:35:07>: Variation file name (altpll) is identical with the name of one of its sub-components.
+
+MegaWizard Plug-In Manager will rename the variation to "altpla" to prevent compilation errors
