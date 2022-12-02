@@ -1,13 +1,15 @@
 |Block1
-s1 <= adc:inst1.s1
-inclk0 => reloj:inst4.inclk0
-areset => reloj:inst4.areset
-x => adc:inst1.x
-s2 <= adc:inst1.s2
-s3 <= adc:inst1.s3
+x => adc:b2v_inst1.x
+inclk0 => reloj:b2v_inst4.inclk0
+areset => reloj:b2v_inst4.areset
+s1 <= adc:b2v_inst1.s1
+s2 <= adc:b2v_inst1.s2
+s3 <= adc:b2v_inst1.s3
+c0 <= reloj:b2v_inst4.c0
+locked <= reloj:b2v_inst4.locked
 
 
-|Block1|adc:inst1
+|Block1|adc:b2v_inst1
 reset => reg_fstate.state6.OUTPUTSELECT
 reset => reg_fstate.state4.OUTPUTSELECT
 reset => reg_fstate.state5.OUTPUTSELECT
@@ -46,14 +48,14 @@ s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
 s3 <= s3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Block1|reloj:inst4
+|Block1|reloj:b2v_inst4
 areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 locked <= altpll:altpll_component.locked
 
 
-|Block1|reloj:inst4|altpll:altpll_component
+|Block1|reloj:b2v_inst4|altpll:altpll_component
 inclk[0] => reloj_altpll:auto_generated.inclk[0]
 inclk[1] => reloj_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -113,7 +115,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|Block1|reloj:inst4|altpll:altpll_component|reloj_altpll:auto_generated
+|Block1|reloj:b2v_inst4|altpll:altpll_component|reloj_altpll:auto_generated
 areset => pll_lock_sync.ACLR
 areset => pll1.ARESET
 clk[0] <= pll1.CLK

@@ -34,6 +34,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 336 344 392 360))
 )
 (pin
 	(input)
@@ -50,6 +51,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -176 176 -112 192))
 )
 (pin
 	(input)
@@ -82,6 +84,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 872 160 928 176))
 )
 (pin
 	(output)
@@ -98,12 +101,46 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 872 176 928 192))
 )
 (pin
 	(output)
 	(rect 696 176 872 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "s3" (rect 90 0 101 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 872 192 928 208))
+)
+(pin
+	(output)
+	(rect 320 80 496 96)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "c0" (rect 90 0 101 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 296 224 472 240)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "locked" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -281,14 +318,64 @@ applicable agreement for further details.
 	(pt 424 128)
 )
 (connector
-	(pt 376 184)
 	(pt 304 184)
+	(pt 312 184)
 )
 (connector
-	(pt 376 128)
-	(pt 376 184)
+	(pt 312 232)
+	(pt 296 232)
+)
+(connector
+	(pt 560 168)
+	(pt 560 176)
+)
+(connector
+	(pt 568 168)
+	(pt 560 168)
+)
+(connector
+	(pt 560 176)
+	(pt 328 176)
 )
 (connector
 	(pt 304 168)
-	(pt 568 168)
+	(pt 312 168)
 )
+(connector
+	(pt 312 88)
+	(pt 320 88)
+)
+(connector
+	(pt 328 152)
+	(pt 312 152)
+)
+(connector
+	(pt 328 152)
+	(pt 328 176)
+)
+(connector
+	(pt 312 168)
+	(pt 312 152)
+)
+(connector
+	(pt 312 152)
+	(pt 312 88)
+)
+(connector
+	(pt 376 208)
+	(pt 376 128)
+)
+(connector
+	(pt 376 208)
+	(pt 312 208)
+)
+(connector
+	(pt 312 184)
+	(pt 312 208)
+)
+(connector
+	(pt 312 208)
+	(pt 312 232)
+)
+(junction (pt 312 152))
+(junction (pt 312 208))
