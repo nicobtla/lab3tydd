@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Fri Dec 02 17:24:57 2022"
+-- CREATED		"Sun Dec 04 22:19:59 2022"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -66,7 +66,7 @@ locked <= SYNTHESIZED_WIRE_2;
 
 
 
-b2v_inst1 : adc
+b2v_inst : adc
 PORT MAP(reset => SYNTHESIZED_WIRE_0,
 		 clock => SYNTHESIZED_WIRE_1,
 		 x => x,
