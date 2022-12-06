@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Sun Dec 04 22:19:59 2022"
+-- CREATED		"Mon Dec 05 22:09:28 2022"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -27,11 +27,15 @@ ENTITY Block1 IS
 		x :  IN  STD_LOGIC;
 		inclk0 :  IN  STD_LOGIC;
 		areset :  IN  STD_LOGIC;
+		reset :  IN  STD_LOGIC;
 		s1 :  OUT  STD_LOGIC;
 		s2 :  OUT  STD_LOGIC;
 		s3 :  OUT  STD_LOGIC;
 		c0 :  OUT  STD_LOGIC;
-		locked :  OUT  STD_LOGIC
+		locked :  OUT  STD_LOGIC;
+		led1 :  OUT  STD_LOGIC;
+		led2 :  OUT  STD_LOGIC;
+		led3 :  OUT  STD_LOGIC
 	);
 END Block1;
 
@@ -41,6 +45,7 @@ COMPONENT adc
 	PORT(reset : IN STD_LOGIC;
 		 clock : IN STD_LOGIC;
 		 x : IN STD_LOGIC;
+		 r : IN STD_LOGIC;
 		 s1 : OUT STD_LOGIC;
 		 s2 : OUT STD_LOGIC;
 		 s3 : OUT STD_LOGIC
@@ -58,31 +63,41 @@ END COMPONENT;
 SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
 
 
 BEGIN 
-c0 <= SYNTHESIZED_WIRE_1;
+s1 <= SYNTHESIZED_WIRE_3;
+s2 <= SYNTHESIZED_WIRE_4;
+s3 <= SYNTHESIZED_WIRE_5;
+c0 <= SYNTHESIZED_WIRE_0;
 locked <= SYNTHESIZED_WIRE_2;
+led1 <= SYNTHESIZED_WIRE_3;
+led2 <= SYNTHESIZED_WIRE_4;
+led3 <= SYNTHESIZED_WIRE_5;
 
 
 
 b2v_inst : adc
-PORT MAP(reset => SYNTHESIZED_WIRE_0,
-		 clock => SYNTHESIZED_WIRE_1,
+PORT MAP(reset => reset,
+		 clock => SYNTHESIZED_WIRE_0,
 		 x => x,
-		 s1 => s1,
-		 s2 => s2,
-		 s3 => s3);
+		 r => SYNTHESIZED_WIRE_1,
+		 s1 => SYNTHESIZED_WIRE_3,
+		 s2 => SYNTHESIZED_WIRE_4,
+		 s3 => SYNTHESIZED_WIRE_5);
 
 
-SYNTHESIZED_WIRE_0 <= NOT(SYNTHESIZED_WIRE_2);
+SYNTHESIZED_WIRE_1 <= NOT(SYNTHESIZED_WIRE_2);
 
 
 
 b2v_inst4 : reloj
 PORT MAP(inclk0 => inclk0,
 		 areset => areset,
-		 c0 => SYNTHESIZED_WIRE_1,
+		 c0 => SYNTHESIZED_WIRE_0,
 		 locked => SYNTHESIZED_WIRE_2);
 
 

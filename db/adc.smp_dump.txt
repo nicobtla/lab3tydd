@@ -1,5 +1,5 @@
 
-State Machine - |adc|fstate
+State Machine - |Block1|adc:b2v_inst|fstate
 Name fstate.state12 fstate.state13 fstate.state14 fstate.state15 fstate.state11 fstate.state10 fstate.state8 fstate.state9 fstate.state6 fstate.state7 fstate.state3 fstate.state2 fstate.state5 fstate.state4 fstate.state1 
 fstate.state1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 fstate.state4 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
