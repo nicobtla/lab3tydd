@@ -11,8 +11,6 @@ entity Block1 is
         s3              : out    vl_logic;
         c0              : out    vl_logic;
         locked          : out    vl_logic;
-        led1            : out    vl_logic;
-        led2            : out    vl_logic;
-        led3            : out    vl_logic
+        r               : out    vl_logic
     );
 end Block1;
