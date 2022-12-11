@@ -70,22 +70,6 @@ applicable agreement for further details.
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
-	(input)
-	(rect 408 40 576 56)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 29 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 928 88 1104 104)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -170,9 +154,57 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 640 336 816 352)
+	(rect 560 96 736 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "r" (rect 90 0 93 12)(font "Arial" ))
+	(text "reset" (rect 90 0 114 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 904 128 1080 144)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "led1" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 840 208 1016 224)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "led2" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 808 328 984 344)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "led3" (rect 90 0 110 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -297,13 +329,6 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 0 80)
-		(input)
-		(text "r" (rect 0 0 3 12)(font "Arial" ))
-		(text "r" (rect 21 75 24 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
 		(pt 128 32)
 		(output)
 		(text "s1" (rect 0 0 11 12)(font "Arial" ))
@@ -329,10 +354,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 504 128)
-	(pt 424 128)
-)
-(connector
 	(pt 312 88)
 	(pt 320 88)
 )
@@ -351,14 +372,6 @@ applicable agreement for further details.
 (connector
 	(pt 296 184)
 	(pt 312 184)
-)
-(connector
-	(pt 776 272)
-	(pt 824 272)
-)
-(connector
-	(pt 576 48)
-	(pt 616 48)
 )
 (connector
 	(pt 32 168)
@@ -401,10 +414,6 @@ applicable agreement for further details.
 	(pt 344 152)
 )
 (connector
-	(pt 504 128)
-	(pt 504 208)
-)
-(connector
 	(pt 560 336)
 	(pt 560 192)
 )
@@ -417,14 +426,6 @@ applicable agreement for further details.
 	(pt 776 160)
 )
 (connector
-	(pt 616 48)
-	(pt 616 160)
-)
-(connector
-	(pt 616 160)
-	(pt 632 160)
-)
-(connector
 	(pt 344 152)
 	(pt 344 176)
 )
@@ -435,22 +436,6 @@ applicable agreement for further details.
 (connector
 	(pt 760 192)
 	(pt 776 192)
-)
-(connector
-	(pt 600 208)
-	(pt 600 344)
-)
-(connector
-	(pt 600 344)
-	(pt 640 344)
-)
-(connector
-	(pt 504 208)
-	(pt 600 208)
-)
-(connector
-	(pt 600 208)
-	(pt 632 208)
 )
 (connector
 	(pt 40 168)
@@ -469,13 +454,68 @@ applicable agreement for further details.
 	(pt 776 272)
 )
 (connector
+	(pt 632 160)
+	(pt 504 160)
+)
+(connector
+	(pt 504 128)
+	(pt 504 160)
+)
+(connector
+	(pt 520 104)
+	(pt 560 104)
+)
+(connector
+	(pt 520 128)
+	(pt 520 104)
+)
+(connector
+	(pt 424 128)
+	(pt 504 128)
+)
+(connector
+	(pt 504 128)
+	(pt 520 128)
+)
+(connector
+	(pt 808 272)
+	(pt 808 336)
+)
+(connector
+	(pt 776 272)
+	(pt 808 272)
+)
+(connector
+	(pt 808 272)
+	(pt 824 272)
+)
+(connector
+	(pt 840 176)
+	(pt 840 216)
+)
+(connector
 	(pt 760 176)
+	(pt 840 176)
+)
+(connector
+	(pt 840 176)
 	(pt 848 176)
 )
 (connector
+	(pt 904 96)
+	(pt 904 136)
+)
+(connector
 	(pt 776 96)
+	(pt 904 96)
+)
+(connector
+	(pt 904 96)
 	(pt 928 96)
 )
 (junction (pt 312 152))
 (junction (pt 312 208))
-(junction (pt 600 208))
+(junction (pt 504 128))
+(junction (pt 808 272))
+(junction (pt 840 176))
+(junction (pt 904 96))

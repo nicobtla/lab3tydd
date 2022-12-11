@@ -33,9 +33,9 @@
 #  Note : Cyclone III PLL locked to incoming clock
 # Time: 90000.000 ps  Instance: Block1_vlg_vec_tst.i1.\b2v_inst4|altpll_component|auto_generated|pll1 
 #  Note : Cyclone III PLL was reset
-# Time: 240000.000 ps  Instance: Block1_vlg_vec_tst.i1.\b2v_inst4|altpll_component|auto_generated|pll1 
+# Time: 190000.000 ps  Instance: Block1_vlg_vec_tst.i1.\b2v_inst4|altpll_component|auto_generated|pll1 
 #  Note : Cyclone III PLL locked to incoming clock
-# Time: 370000.000 ps  Instance: Block1_vlg_vec_tst.i1.\b2v_inst4|altpll_component|auto_generated|pll1 
+# Time: 330000.000 ps  Instance: Block1_vlg_vec_tst.i1.\b2v_inst4|altpll_component|auto_generated|pll1 
 # Simulation passed !
-# ** Note: $finish    : adc.vt(289)
+# ** Note: $finish    : adc.vt(368)
 #    Time: 1 us  Iteration: 0  Instance: /Block1_vlg_vec_tst/tb_out
